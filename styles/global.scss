@@ -1,8 +1,10 @@
+@import "fonts";
 @import "variables";
 
 * {
   box-sizing: border-box;
-  font-family: Roboto;
+  font-family: Poppins;
+  font-weight: 400;
 }
 
 body, html {
