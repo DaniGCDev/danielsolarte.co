@@ -1,18 +1,17 @@
-import './SkillBox.module.scss';
+import classes from './SkillBox.module.scss';
 import Img from 'next/image';
 
 interface Props {
   alt: string;
-  imageSrc: string;
+  image: StaticImageData;
 }
 
-const SkillBox: React.FC<Props> = ({ alt, imageSrc }) => {
-  return (
-    <div className="SkillBox">
-      <div className="SkillBox__bg" />
-      <Img alt={alt} src={imageSrc} />
+const SkillBox: React.FC<Props> = ({ alt, image }) => (
+  <div className={classes.SkillBox}>
+    <div className={classes.SkillBox__img}>
+      <Img alt={alt} src={image} />
     </div>
-  );
-};
+  </div>
+);
 
 export default SkillBox;

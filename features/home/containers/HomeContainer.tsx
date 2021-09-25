@@ -1,16 +1,16 @@
+import Footer from 'features/common/Footer';
+import Header from 'features/common/Header';
+import HomeLeft from '../components/HomeLeft';
+import HomeRight from '../components/HomeRight';
 import classes from './HomeContainer.module.scss';
 
-const HomeContainer: React.FC = () => {
-  return (
-    <div className={classes.HomeContainer}>
-      <div className={classes.HomeContainer__left}>
-        <div className={classes.HomeContainer__left__bg}>
-          <div className={classes.HomeContainer__left__bg__light} />
-        </div>
-      </div>
-      <div className={classes.HomeContainer__right}></div>
-    </div>
-  );
-};
+const HomeContainer: React.FC = () => (
+  <div className={classes.HomeContainer}>
+    <Header />
+    <HomeLeft />
+    <HomeRight />
+    <Footer fixed />
+  </div>
+);
 
 export default HomeContainer;
