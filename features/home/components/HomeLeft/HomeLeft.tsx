@@ -1,12 +1,9 @@
 import SkillBox from "../SkillBox";
 import classes from "./HomeLeft.module.scss";
-import FlutterIcon from '@assets/images/skills/flutter.png';
-import RustIcon from '@assets/images/skills/rust.png';
-import TypeScriptIcon from '@assets/images/skills/typescript.svg';
-import MongoDBIcon from '@assets/images/skills/mongodb.png';
 import AvatarImage from '@assets/images/avatar.png';
 import Img from 'next/image';
 import LogoImage from '@assets/images/logo.svg';
+import SkillsData from "@constants/skills.constant";
 
 const HomeLeft: React.FC = () => (
   <section className={classes.HomeLeft}>
@@ -18,10 +15,9 @@ const HomeLeft: React.FC = () => (
     </div>
     <div className={classes.HomeLeft__profileImage}>
       <div className={classes.HomeLeft__profileImage__skills}>
-        <SkillBox alt="Rust" image={RustIcon} />
-        <SkillBox alt="TypeScript" image={TypeScriptIcon} />
-        <SkillBox alt="MongoDB" image={MongoDBIcon} />
-        <SkillBox alt="Flutter" image={FlutterIcon} />
+        {SkillsData.slice(0, 4).map((data, i) => (
+          <SkillBox key={`skill_${data.title.toLowerCase().replaceAll(' ', '_')}_${i}`} alt={data.title} image={data.image} />
+        ))}
       </div>
       <div className={classes.HomeLeft__profileImage__avatar}>
         <Img alt="Avatar" src={AvatarImage} layout="fill" />
