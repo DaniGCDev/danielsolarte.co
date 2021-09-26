@@ -1,5 +1,6 @@
 import classes from './Header.module.scss';
 import Link from 'next/link';
+import { getText } from '@utils/internationalization';
 
 const Header: React.FC = () => (
   <header className={classes.Header}>
@@ -7,27 +8,27 @@ const Header: React.FC = () => (
       <ul className={classes.Header__nav__items}>
         <li className={`${classes.Header__nav__items__item} ${classes['Header__nav__items__item--active']}`}>
           <Link href="/">
-            About me
+            {getText('about_me_title')}
           </Link>
         </li>
         <li className={classes.Header__nav__items__item}>
           <Link href="/projects">
-            Projects
+            {getText('projects_title')}
           </Link>
         </li>
         <li className={classes.Header__nav__items__item}>
           <Link href="/jobs">
-            Experience
+            {getText('jobs_title')}
           </Link>
         </li>
         <li className={classes.Header__nav__items__item}>
           <Link href="/skills">
-            Skills
+            {getText('skills_title')}
           </Link>
         </li>
         <li className={classes.Header__nav__items__item}>
           <Link href="/blog">
-            Blog
+            {getText('blog_title')}
           </Link>
         </li>
       </ul>

@@ -1,4 +1,14 @@
 {
+  "about_me_title": "About me",
+  "projects_title": "Projects",
+  "jobs_title": "Experience",
+  "skills_title": "Skills",
+  "blog_title": "Blog",
+
+  "flag_alt": "Colombia Flag",
+  "about_me_desc": "Cross-platform software developer with experience in JavaScript, TypeScript, Rust, NodeJS, ReactJS, Flutter and SASS.",
+  "recent_projects_title": "Recent projects",
+
   "project_rustlang_es_title": "Rustlang in Spanish",
   "project_rustlang_es_link_youtube": "YouTube Channel",
 
