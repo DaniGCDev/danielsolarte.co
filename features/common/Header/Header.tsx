@@ -38,11 +38,6 @@ const Header: React.FC = () => {
             </Link>
           </li>
           <li className={classes.Header__nav__items__item}>
-            <Link href="/skills">
-              {getText('skills_title')}
-            </Link>
-          </li>
-          <li className={classes.Header__nav__items__item}>
             <Link href="/blog">
               {getText('blog_title')}
             </Link>
