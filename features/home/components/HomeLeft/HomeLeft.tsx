@@ -11,7 +11,7 @@ const HomeLeft: React.FC = () => (
       <div className={classes.HomeLeft__bg__light} />
     </div>
     <div className={classes.HomeLeft__logo}>
-      <Img alt="Logo" src={LogoImage} width={71} height={41} />
+      <Img alt="Logo" src={LogoImage} />
     </div>
     <div className={classes.HomeLeft__profileImage}>
       <div className={classes.HomeLeft__profileImage__skills}>

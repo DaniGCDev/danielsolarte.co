@@ -14,7 +14,7 @@ const HomeRight: React.FC = () => (
       <h1 className={classes.HomeRight__content__title}>
         Daniel Solarte Chaverra
         <div className={classes.HomeRight__content__title__flag}>
-          <Img alt={getText('flag_alt')} src={FlagImage} width={57} height={43} />
+          <Img alt={getText('flag_alt')} src={FlagImage} />
         </div>
       </h1>
       <p className={classes.HomeRight__content__about}>
