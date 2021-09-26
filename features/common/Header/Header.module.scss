@@ -16,17 +16,24 @@
       padding: 0;
 
       &__item {
+        $item: &;
+
+        color: rgba(white, .6);
         font-size: 22.08px;
-        color: white;
+        transition: color ease-in-out .2s;
 
         &--active {
           color: $primaryColor;
-          
+        }
+        &:hover {
+          &:not(#{ $item }--active) {
+            color: white;
+          }
         }
         & > a {
-          text-decoration: none;
           color: inherit;
           font-weight: 600;
+          text-decoration: none;
         }
       }
     }
