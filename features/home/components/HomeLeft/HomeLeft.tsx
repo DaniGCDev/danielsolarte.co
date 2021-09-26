@@ -16,7 +16,7 @@ const HomeLeft: React.FC = () => (
     <div className={classes.HomeLeft__profileImage}>
       <div className={classes.HomeLeft__profileImage__skills}>
         {SkillsData.slice(0, 4).map((data, i) => (
-          <SkillBox key={`skill_${data.title.toLowerCase().replaceAll(' ', '_')}_${i}`} alt={data.title} image={data.image} />
+          <SkillBox key={`skill_${data.title.toLowerCase().replace(/\s/gi, '_')}_${i}`} alt={data.title} image={data.image} />
         ))}
       </div>
       <div className={classes.HomeLeft__profileImage__avatar}>
