@@ -11,14 +11,14 @@ interface Props {
 const Footer: React.FC<Props> = ({ fixed = false }) => (
   <footer className={`${classes.Footer} ${fixed ? classes['Footer--fixed'] : ''}`}>
     <div className={classes.Footer__items}>
-      <a href="https://github.com/daschdev" target="_black" rel="noopener noreferrer">
-        <Img alt="GitHub: @daschdev" src={GitHubIcon} layout="fill" />
+      <a href="https://github.com/danielsolartech" target="_black" rel="noopener noreferrer">
+        <Img alt="GitHub: @danielsolartech" src={GitHubIcon} layout="fill" />
       </a>
-      <a href="https://www.linkedin.com/in/daschdev/" target="_black" rel="noopener noreferrer">
-        <Img alt="LinkedIn: @daschdev" src={LinkedInIcon} layout="fill" />
+      <a href="https://www.linkedin.com/in/danielsolartech/" target="_black" rel="noopener noreferrer">
+        <Img alt="LinkedIn: @danielsolartech" src={LinkedInIcon} layout="fill" />
       </a>
       <a href="https://twitter.com/daschdev" target="_black" rel="noopener noreferrer">
-        <Img alt="Twitter: @daschdev" src={TwitterIcon} layout="fill" />
+        <Img alt="Twitter: @danielsolartech" src={TwitterIcon} layout="fill" />
       </a>
     </div>
   </footer>
