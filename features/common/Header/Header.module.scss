@@ -2,108 +2,87 @@
 @import "variables";
 
 .Header {
-  position: absolute;
-  right: 4rem;
+  position: fixed;
+  left: calc(50% - (726.73px / 2));
   top: 1rem;
   z-index: 1000;
 
-  @media (max-width: $lg) {
-    right: 3rem;
-    top: 2rem;
-  }
-
   @media (max-width: $sm) {
-    background-color: $primaryColor;
-    box-shadow: 0 0 10px 0 $primaryColor;
     left: 0;
-    position: fixed;
-    right: 0;
-    top: 0;
+    top: calc(100% - 50px);
+    width: 100%;
   }
 
-  &__content {
-    align-items: center;
-    background-color: $primaryColor;
-    display: none;
-    justify-content: space-between;
-    padding: .5rem 1rem;
-    position: relative;
-    z-index: 1;
-
-    @media (max-width: $sm) {
-      display: flex;
-    }
-
-    &__logo {
-      height: 21px;
-      position: relative;
-      width: 51px;
-    }
-    &__toggle {
-      $size: 2rem;
-
-      background-color: transparent;
-      border: 0;
-      border-radius: 4px;
-      color: white;
-      position: relative;
-      width: $size;
-      height: $size;
-    }
-  }
   &__nav {
-    @media (max-width: $sm) {
-      margin-top: -1000px;
-      transition: margin-top ease-in-out .4s;
+    background-color: $secondaryColor;
+    padding: .5rem .75rem;
+    border-radius: 30px;
 
-      &--active {
-        margin-top: 0;
-        border-top: 1px solid rgba(white, .2);
-      }
+    @media (max-width: $sm) {
+      border-radius: 0;
+      width: 100%;
     }
 
-    &__items {
+    &__list {
       display: flex;
-      align-items: center;
       list-style: none;
-      gap: 2rem;
+      gap: 1rem;
       margin: 0;
       padding: 0;
 
       @media (max-width: $sm) {
-        flex-flow: column wrap;
-        align-items: flex-start;
-        gap: 0;
+        justify-content: center;
       }
 
       &__item {
-        $item: &;
-
-        color: rgba(white, .6);
-        font-size: 22.08px;
-        transition: color ease-in-out .2s;
+        align-items: center;
+        border-radius: 24px;
+        color: white;
+        cursor: pointer;
+        display: flex;
+        gap: .5rem;
+        justify-content: center;
+        padding: .5rem .8rem;
+        text-decoration: none;
+        transition: .4s background-color ease-in-out, .4s color ease-in-out;
+        text-shadow: 0 1px 1px lighten($primaryColor, 30);
 
         @media (max-width: $sm) {
-          font-size: 1.25rem;
-          padding: .4rem .75rem;
+          &--active &__text {
+            display: block;
+          }
+          &__text {
+            display: none;
+          }
         }
 
+        &:hover {
+          background-color: rgba(white, .1);
+        }
         &--active {
-          color: $primaryColor;
+          background-color: white;
+          color: black;
+          text-shadow: 0 0 0 transparent;
+
+          &:hover {
+            background-color: white;
+          }
+        }
+        &__icon {
+          margin: 0;
 
           @media (max-width: $sm) {
-            color: white;
+            font-size: 14px;
           }
         }
-        &:hover {
-          &:not(#{ $item }--active) {
-            color: white;
+        &__text {
+          font-weight: 500;
+          margin: 0;
+          padding: 0;
+
+          @media (max-width: $sm) {
+            font-size: 12px;
           }
-        }
-        & > a {
-          color: inherit;
-          font-weight: 600;
-          text-decoration: none;
         }
       }
     }

@@ -2,15 +2,17 @@
 // Tablet: @media (min-width: $sm)
 $sm: 640px;
 
+// Tablet: @media (max-width: $md)
+// Laptop: @media (min-width: $lg)
 $md: 768px;
 
-// Tablet: @media (max-width: $lg)
-// Laptop: @media (min-width: $lg)
+// Laptop: @media (max-width: $lg)
+// Laptop L: @media (min-width: $xl)
 $lg: 1024px;
 
-// Laptop: @media (max-width: $xl)
-// Desktop: @media (min-width: $xl)
+// Laptop L: @media (max-width: $xl)
+// Desktop: @media (min-width: $xxl)
 $xl: 1280px;
 
-// Desktop: @media (max-width: $xxl)
+// Desktop (4K): @media (min-width: $xxl)
 $xxl: 1536px;

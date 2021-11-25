@@ -2,11 +2,22 @@
   "about_me_title": "About me",
   "projects_title": "Projects",
   "jobs_title": "Experience",
+  "contact_title": "Contact",
   "blog_title": "Blog",
 
+  "avatar_alt": "Daniel Solarte Chaverra's selfie",
   "flag_alt": "Colombia Flag",
-  "about_me_desc": "Cross-platform software developer with experience in JavaScript, TypeScript, Rust, NodeJS, ReactJS, Flutter and SASS.",
-  "recent_projects_title": "Recent projects",
+  "about_me_desc_1": "I'm a self-taught software developer with knowledge in different languages and technologies useful in everyday at work.",
+  "about_me_desc_2": "I adapt easily to almost any project, also enjoy learning new things daily that may be useful at another time.",
+  "about_me_desc_3": "I'm very sociable and friendly, i try to make work time more enjoyable in order to improve team communication.",
+  "skills_title": "Skills",
+  "best_projects_title": "Some projects",
+
+  "project_nextchat_mobile_title": "NextChat mobile app",
+  "project_nextchat_mobile_desc": "NextChat is a privacy-focused and easy-to-use social messaging network.",
+
+  "project_nongoose_rust_title": "Nongoose (Rust)",
+  "project_nongoose_rust_desc": "Nongoose is an ODM for MongoDB build with Rust.",
 
   "project_rustlang_es_title": "Rustlang in Spanish",
   "project_rustlang_es_link_youtube": "YouTube Channel",

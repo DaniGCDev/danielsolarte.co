@@ -1,0 +1,128 @@
+@import "breakpoints";
+@import "variables";
+
+.container {
+  $avatarSize: 250px;
+
+  display: flex;
+  align-items: flex-start;
+  flex-flow: row wrap;
+
+  @media (max-width: $md) {
+    $avatarSize: 200px;
+  }
+
+  @media (max-width: $sm) {
+    justify-content: center;
+  }
+
+  &__avatar {
+    border-radius: 50%;
+    box-shadow: 0 2px 4px 0 $secondaryColor;
+    height: $avatarSize;
+    overflow: hidden;
+    position: relative;
+    width: $avatarSize;
+  }
+  &__text {
+    margin-left: 3.5rem;
+    margin-top: 3rem;
+    width: calc(100% - 3.5rem - #{ $avatarSize });
+
+    @media (max-width: $lg) {
+      margin-left: 2rem;
+      margin-top: 2rem;
+      width: calc(100% - 2rem - #{ $avatarSize });
+    }
+
+    @media (max-width: $md) {
+      margin-left: 2.5rem;
+      margin-top: 1rem;
+      width: calc(100% - 2.5rem - #{ $avatarSize });
+    }
+
+    @media (max-width: $sm) {
+      margin-left: 0;
+      margin-top: 1.75rem;
+      padding: 0 1rem;
+      width: 100%;
+    }
+
+    &__title {
+      color: $primaryColor;
+      font-family: Poppins;
+      font-weight: bold;
+      font-size: 3rem;
+      line-height: 1.2;
+      margin: 0;
+
+      @media (min-width: $md) and (max-width: $lg) {
+        font-size: 2.75rem;
+      }
+
+      @media (max-width: $sm) {
+        font-size: 2.5rem;
+      }
+
+      &__flag {
+        $heightFlag: 183px;
+        $widthFlag: 275px;
+        $scale: 4;
+
+        @media (min-width: $md) and (max-width: $lg) {
+          $scale: 4.5;
+        }
+
+        @media (max-width: $sm) {
+          $scale: 5;
+        }
+
+        display: inline-block;
+        height: $heightFlag / $scale;
+        position: relative;
+        margin-left: .75rem;
+        width: $widthFlag / $scale;
+      }
+    }
+    &__description {
+      margin-top: 1.25rem;
+
+      & > p {
+        margin: 0;
+        margin-top: 1rem;
+
+        &:nth-child(1) {
+          margin-top: 0;
+        }
+      }
+    }
+    &__social_media {
+      align-items: center;
+      display: flex;
+      flex-flow: row wrap;
+      gap: 1.75rem;
+      list-style: none;
+      margin: 0;
+      margin-top: 1.25rem;
+      padding: 0 .75rem;
+
+      @media (max-width: $md) {
+        justify-content: center;
+        gap: 2.25rem;
+      }
+
+      &__item {
+        cursor: pointer;
+        display: block;
+        height: 24px;
+        position: relative;
+        transition: .4s transition ease-in-out;
+        width: 24px;
+
+        &:hover {
+          transform: scale3d(.9, .9, .9);
+        }
+      }
+    }
+  }
+}

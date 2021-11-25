@@ -1,3 +1,6 @@
+import ISkill from '@interfaces/skills.interface';
+
+// Icons
 import CSS3 from '@assets/images/skills/css3.png';
 import Flutter from '@assets/images/skills/flutter.png';
 import Git from '@assets/images/skills/git.png';
@@ -13,11 +16,6 @@ import Rust from '@assets/images/skills/rust.png';
 import SASS from '@assets/images/skills/sass.png';
 import SocketIO from '@assets/images/skills/socketio.svg';
 import TypeScript from '@assets/images/skills/typescript.svg';
-
-interface ISkill {
-  title: string;
-  image: StaticImageData;
-}
 
 const SkillsData: ISkill[] = [
   { title: 'CSS3', image: CSS3 },
