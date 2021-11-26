@@ -13,12 +13,14 @@ const Header: React.FC = () => {
 
   // Hooks
   const router = useRouter();
-  
+
   // Effects
   useEffect(() => {
-    setPageSelected(router.pathname);
+    if (router.pathname != pageSelected) {
+      setPageSelected(router.pathname);
+    }
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+  }, [router.pathname]);
 
   return (
     <header className={classes.Header}>
