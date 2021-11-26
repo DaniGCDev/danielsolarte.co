@@ -1,0 +1,40 @@
+@import "breakpoints";
+@import "variables";
+
+.container {
+  align-items: center;
+  display: flex;
+  flex-flow: column wrap;
+  height: auto;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 1rem;
+  padding-top: 4rem;
+
+  @media (max-width: $md) {
+    padding: 2rem;
+    padding-top: 6rem;
+  }
+
+  @media (max-width: $sm) {
+    padding: 1rem;
+  }
+
+  &__image {
+    max-width: 100%;
+    position: relative;
+  }
+  &__title, &__description {
+    margin: 0;
+    padding: 0;
+  }
+  &__title {
+    font-weight: bold;
+    margin-top: 2rem;
+  }
+  &__link {
+    color: $primaryColor;
+    cursor: pointer;
+    margin-top: 2rem;
+  }
+}

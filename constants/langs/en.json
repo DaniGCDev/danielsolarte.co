@@ -13,6 +13,11 @@
   "skills_title": "Skills",
   "best_projects_title": "Some projects",
 
+  "error_404_alt": "Page not found image",
+  "error_404_title": "Page not found",
+  "error_404_desc": "This page cannot be found",
+  "error_404_button": "Back to home",
+
   "project_nextchat_mobile_title": "NextChat mobile app",
   "project_nextchat_mobile_desc": "NextChat is a privacy-focused and easy-to-use social messaging network.",
 

@@ -13,6 +13,11 @@
   "skills_title": "Habilidades",
   "best_projects_title": "Algunos proyectos",
 
+  "error_404_alt": "Imagen de página no encontrada con número 404",
+  "error_404_title": "Página no encontrada",
+  "error_404_desc": "Esta página no pudo ser encontrada",
+  "error_404_button": "Volver al inicio",
+
   "project_nextchat_mobile_title": "Aplicación móvil de NextChat",
   "project_nextchat_mobile_desc": "NextChat es una red social de mensajería enfocada en la privacidad y fácil de usar.",
 

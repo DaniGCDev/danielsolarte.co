@@ -1,16 +1,6 @@
-import Header from "@features/common/Header";
-import { getText } from "@utils/internationalization";
 import { NextPage } from "next";
-import Head from 'next/head';
+import Error404 from "@features/common/Error404";
 
-const Error404: NextPage = () => (
-  <div>
-    <Head>
-      <meta name="description" content={getText('head_description')} />
-    </Head>
-    <Header />
-    Error 404
-  </div>
-);
+const PageNotFound: NextPage = () => <Error404 />;
 
-export default Error404;
+export default PageNotFound;
