@@ -9,9 +9,7 @@ const Skills: React.FC = () => (
         <div className={classes.container__item__image}>
           <Img alt={skill.title} layout="fill" objectFit="contain" src={skill.image} />
         </div>
-        <h5 className={classes.container__item__title}>
-          {skill.title}
-        </h5>
+        <h5 className={classes.container__item__title}>{skill.title}</h5>
       </li>
     ))}
   </ul>

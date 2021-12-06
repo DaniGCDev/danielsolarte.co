@@ -1,5 +1,7 @@
-@import "breakpoints";
-@import "variables";
+@use 'sass:math';
+
+@import 'breakpoints';
+@import 'variables';
 
 .container {
   $avatarSize: 250px;
@@ -27,18 +29,18 @@
   &__text {
     margin-left: 3.5rem;
     margin-top: 3rem;
-    width: calc(100% - 3.5rem - #{ $avatarSize });
+    width: calc(100% - 3.5rem - #{$avatarSize});
 
     @media (max-width: $lg) {
       margin-left: 2rem;
       margin-top: 2rem;
-      width: calc(100% - 2rem - #{ $avatarSize });
+      width: calc(100% - 2rem - #{$avatarSize});
     }
 
     @media (max-width: $md) {
       margin-left: 2.5rem;
       margin-top: 1rem;
-      width: calc(100% - 2.5rem - #{ $avatarSize });
+      width: calc(100% - 2.5rem - #{$avatarSize});
     }
 
     @media (max-width: $sm) {
@@ -78,10 +80,10 @@
         }
 
         display: inline-block;
-        height: $heightFlag / $scale;
+        height: math.div($heightFlag, $scale);
         position: relative;
-        margin-left: .75rem;
-        width: $widthFlag / $scale;
+        margin-left: 0.75rem;
+        width: math.div($widthFlag, $scale);
       }
     }
     &__description {
@@ -104,7 +106,7 @@
       list-style: none;
       margin: 0;
       margin-top: 1.25rem;
-      padding: 0 .75rem;
+      padding: 0 0.75rem;
 
       @media (max-width: $md) {
         justify-content: center;
@@ -116,11 +118,11 @@
         display: block;
         height: 24px;
         position: relative;
-        transition: .4s transition ease-in-out;
+        transition: 0.4s transition ease-in-out;
         width: 24px;
 
         &:hover {
-          transform: scale3d(.9, .9, .9);
+          transform: scale3d(0.9, 0.9, 0.9);
         }
       }
     }

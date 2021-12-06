@@ -1,4 +1,4 @@
-import ProjectCategory from "@enums/project-category.enum";
+import ProjectCategory from '@enums/project-category.enum';
 
 interface IProject {
   best: boolean;
@@ -6,7 +6,7 @@ interface IProject {
   date: Date;
   images: StaticImageData[];
   key: string;
-  links: { key: string, url: string }[];
+  links: { key: string; url: string }[];
   principal_image?: StaticImageData;
   showDay?: boolean;
 }

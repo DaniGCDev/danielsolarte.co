@@ -1,4 +1,4 @@
-@import "breakpoints";
+@import 'breakpoints';
 
 .container {
   display: flex;
@@ -14,7 +14,8 @@
     margin-bottom: calc(50px + 1.75rem);
   }
 
-  &__left, &__right {
+  &__left,
+  &__right {
     padding-top: 6rem;
     width: calc(50% - 5rem);
 
@@ -98,7 +99,7 @@
       background: {
         image: url('/images/waves.svg');
         repeat: repeat-x;
-      };
+      }
       bottom: -6.5rem;
       height: 198px;
       position: absolute;
@@ -106,8 +107,7 @@
       width: 6400px;
 
       &--secondary {
-        animation:
-          wave $animationTime cubic-bezier(0.36, 0.45, 0.63, 0.53) -.125s infinite,
+        animation: wave $animationTime cubic-bezier(0.36, 0.45, 0.63, 0.53) -0.125s infinite,
           swell 10s ease -1.25s infinite;
         background-image: url('/images/waves2.svg');
         bottom: -6rem;
@@ -127,10 +127,11 @@
 }
 
 @keyframes swell {
-  0%, 100% {
+  0%,
+  100% {
     transform: translate3d(0, -1.75rem, 0);
   }
   50% {
-    transform: translate3d(0, .25rem, 0);
+    transform: translate3d(0, 0.25rem, 0);
   }
 }

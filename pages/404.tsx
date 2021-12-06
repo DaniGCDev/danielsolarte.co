@@ -1,5 +1,5 @@
-import { NextPage } from "next";
-import Error404 from "@features/common/Error404";
+import { NextPage } from 'next';
+import Error404 from '@features/common/Error404';
 
 const PageNotFound: NextPage = () => <Error404 />;
 

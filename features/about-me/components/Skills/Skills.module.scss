@@ -1,4 +1,4 @@
-@import "breakpoints";
+@import 'breakpoints';
 
 .container {
   align-items: center;
@@ -31,9 +31,9 @@
     }
     &__title {
       color: lighten(black, 60);
-      letter-spacing: .02em;
+      letter-spacing: 0.02em;
       margin: 0;
-      margin-top: .75rem;
+      margin-top: 0.75rem;
     }
   }
 }

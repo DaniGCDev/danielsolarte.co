@@ -1,4 +1,4 @@
-import IRoute from "@interfaces/routes.interface";
+import IRoute from '@interfaces/routes.interface';
 
 const routes: IRoute[] = [
   {

@@ -8,7 +8,7 @@ const PersonalPortfolio: React.FC<AppProps> = ({ Component, pageProps }) => (
   <>
     <Head>
       <link rel="icon" href="/favicon.ico" />
-      <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet" />
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
       <meta name="description" content={getText('head_description')} />
       <title>Daniel Solarte Chaverra || Portfolio</title>
     </Head>

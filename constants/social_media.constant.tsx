@@ -10,7 +10,7 @@ const socialMedia: ISocialMedia[] = [
   {
     icon: GitHubIcon,
     title: 'GitHub: @danielsolartech',
-    url: 'https://www.github.com/danielsolartech'
+    url: 'https://www.github.com/danielsolartech',
   },
   {
     icon: TwitterIcon,

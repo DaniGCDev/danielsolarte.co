@@ -26,9 +26,7 @@ const ProjectsData: IProject[] = [
     date: new Date(2021, 10),
     images: [],
     key: 'nextchat_mobile',
-    links: [
-      { key: 'github_android', url: 'https://github.com/NextChatORG/nextchat-android' },
-    ],
+    links: [{ key: 'github_android', url: 'https://github.com/NextChatORG/nextchat-android' }],
     principal_image: NextChatIcon,
   },
   {
@@ -48,9 +46,7 @@ const ProjectsData: IProject[] = [
     category: ProjectCategory.Meeting,
     date: new Date(2020, 12),
     images: [RustLangES],
-    links: [
-      { key: 'youtube', url: 'https://www.youtube.com/channel/UCkFoBOX11Aub4sKHAzu7uOw' },
-    ],
+    links: [{ key: 'youtube', url: 'https://www.youtube.com/channel/UCkFoBOX11Aub4sKHAzu7uOw' }],
     key: 'rustlang_es',
   },
   {
@@ -58,9 +54,7 @@ const ProjectsData: IProject[] = [
     category: ProjectCategory.FrontEnd,
     date: new Date(2020, 12),
     images: [WebTemplatesRadioLibreCC],
-    links: [
-      { key: 'github', url: 'https://github.com/daschdev/web_templates' },
-    ],
+    links: [{ key: 'github', url: 'https://github.com/daschdev/web_templates' }],
     key: 'radiolibrecc',
   },
   // November, 2020
@@ -69,9 +63,7 @@ const ProjectsData: IProject[] = [
     category: ProjectCategory.Meeting,
     date: new Date(2020, 11, 17),
     images: [GitHubPresente],
-    links: [
-      { key: 'youtube', url: 'https://youtu.be/l8bLDR89qHA?t=4893' },
-    ],
+    links: [{ key: 'youtube', url: 'https://youtu.be/l8bLDR89qHA?t=4893' }],
     key: 'github_presente',
     showDay: true,
   },
@@ -104,9 +96,7 @@ const ProjectsData: IProject[] = [
     category: ProjectCategory.FrontEnd,
     date: new Date(2020, 9),
     images: [PersonalPortfolioV1Home, PersonalPortfolioV1Projects, PersonalPortfolioV1Skills],
-    links: [
-      { key: 'github', url: 'https://github.com/daschdev/daschdev.github.io' },
-    ],
+    links: [{ key: 'github', url: 'https://github.com/daschdev/daschdev.github.io' }],
     key: 'portfolio_v1',
   },
   // August, 2020
@@ -115,9 +105,7 @@ const ProjectsData: IProject[] = [
     category: [ProjectCategory.BackEnd, ProjectCategory.Learn],
     date: new Date(2020, 8),
     images: [Sflynlang],
-    links: [
-      { key: 'github', url: 'https://github.com/sflynlang/sflynlang-interpreter' },
-    ],
+    links: [{ key: 'github', url: 'https://github.com/sflynlang/sflynlang-interpreter' }],
     key: 'sflynlang',
   },
   {
@@ -125,9 +113,7 @@ const ProjectsData: IProject[] = [
     category: [ProjectCategory.BackEnd, ProjectCategory.Learn],
     date: new Date(2020, 8),
     images: [],
-    links: [
-      { key: 'github', url: 'https://github.com/daschdev/spooked' },
-    ],
+    links: [{ key: 'github', url: 'https://github.com/daschdev/spooked' }],
     key: 'spooked',
   },
   {
@@ -135,9 +121,7 @@ const ProjectsData: IProject[] = [
     category: [ProjectCategory.BackEnd, ProjectCategory.Learn],
     date: new Date(2020, 8),
     images: [RustNotesCLI],
-    links: [
-      { key: 'github', url: 'https://github.com/daschdev/rust-notes-cli' },
-    ],
+    links: [{ key: 'github', url: 'https://github.com/daschdev/rust-notes-cli' }],
     key: 'rust_notes_cli',
   },
   // July, 2020
@@ -146,9 +130,7 @@ const ProjectsData: IProject[] = [
     category: [ProjectCategory.Design, ProjectCategory.Learn, ProjectCategory.Mobile],
     date: new Date(2020, 7),
     images: [NextMusicConcept],
-    links: [
-      { key: 'github', url: 'https://github.com/daschdev/nextmusic' },
-    ],
+    links: [{ key: 'github', url: 'https://github.com/daschdev/nextmusic' }],
     key: 'nextmusic',
   },
   {
@@ -156,9 +138,7 @@ const ProjectsData: IProject[] = [
     category: ProjectCategory.FrontEnd,
     date: new Date(2020, 7),
     images: [FaztCommunityLandingPage],
-    links: [
-      { key: 'twitter', url: 'https://twitter.com/FaztTech/status/1281102226237292544' },
-    ],
+    links: [{ key: 'twitter', url: 'https://twitter.com/FaztTech/status/1281102226237292544' }],
     key: 'faztcommunity',
   },
   // June, 2020
@@ -167,9 +147,7 @@ const ProjectsData: IProject[] = [
     category: [ProjectCategory.Contribution, ProjectCategory.DiscordBot],
     date: new Date(2020, 6),
     images: [FaztBot],
-    links: [
-      { key: 'github', url: 'https://github.com/faztcommunity/fazt-bot' },
-    ],
+    links: [{ key: 'github', url: 'https://github.com/faztcommunity/fazt-bot' }],
     key: 'faztbot',
   },
   {
@@ -189,9 +167,7 @@ const ProjectsData: IProject[] = [
     category: [ProjectCategory.Contribution, ProjectCategory.BackEnd],
     date: new Date(2020, 5),
     images: [],
-    links: [
-      { key: 'github', url: 'https://github.com/faztcommunity/music-player-backend' },
-    ],
+    links: [{ key: 'github', url: 'https://github.com/faztcommunity/music-player-backend' }],
     key: 'music_player_backend',
   },
 ];

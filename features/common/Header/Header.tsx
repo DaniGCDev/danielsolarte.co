@@ -28,15 +28,15 @@ const Header: React.FC = () => {
         <ul className={classes.Header__nav__list}>
           {routes.map((route, i) => (
             <Link passHref href={route.url} key={`route_${route.icon}_${i}`}>
-              <li className={clsx(classes.Header__nav__list__item, {
-                [classes['Header__nav__list__item--active']]: route.active.includes(pageSelected),
-              })}>
+              <li
+                className={clsx(classes.Header__nav__list__item, {
+                  [classes['Header__nav__list__item--active']]: route.active.includes(pageSelected),
+                })}
+              >
                 <span className={clsx('material-icons', classes.Header__nav__list__item__icon)}>
                   {route.icon}
                 </span>
-                <p className={classes.Header__nav__list__item__text}>
-                  {getText(route.title)}
-                </p>
+                <p className={classes.Header__nav__list__item__text}>{getText(route.title)}</p>
               </li>
             </Link>
           ))}
@@ -44,6 +44,6 @@ const Header: React.FC = () => {
       </nav>
     </header>
   );
-}
+};
 
 export default Header;

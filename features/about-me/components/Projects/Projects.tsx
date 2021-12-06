@@ -26,9 +26,7 @@ const Projects: React.FC = () => (
             </p>
           </figcaption>
           <div className={classes.container__item__button}>
-            <div className="material-icons">
-              chevron_right
-            </div>
+            <div className="material-icons">chevron_right</div>
           </div>
         </figure>
       </Link>
