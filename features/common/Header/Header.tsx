@@ -22,6 +22,10 @@ const Header: React.FC = () => {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [router.pathname]);
 
+  if (pageSelected === '/cv') {
+    return null;
+  }
+
   return (
     <header className={classes.Header}>
       <nav className={classes.Header__nav}>

@@ -1,0 +1,53 @@
+@import 'breakpoints';
+@import 'variables';
+
+.header {
+  background-color: $primaryColor;
+  color: white;
+  padding: 2.5rem 2rem;
+  width: 100%;
+
+  @media (max-width: $sm) {
+    padding: 1.5rem 1rem;
+  }
+
+  &__top {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+
+    &__title,
+    &__personalTitle {
+      margin: 0;
+      padding: 0;
+    }
+    &__title {
+      display: inline-block;
+      font-weight: bold;
+      letter-spacing: 0.02em;
+      line-height: 1;
+    }
+    &__personalTitle {
+      background-color: white;
+      border-radius: 20px;
+      color: $primaryColor;
+      display: inline-block;
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.02em;
+      margin-left: 0.75rem;
+      padding: 0.5rem 1rem;
+    }
+  }
+  &__description {
+    font-size: 0.9rem;
+    margin: 0;
+    margin-top: 1.25rem;
+    max-width: 50%;
+    line-height: 1.6;
+
+    @media (max-width: $sm) {
+      max-width: 100%;
+    }
+  }
+}

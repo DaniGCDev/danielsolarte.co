@@ -4,7 +4,6 @@ import ISocialMedia from '@interfaces/social_media.interface';
 import GitHubIcon from '@assets/icons/github.svg';
 import LinkedInIcon from '@assets/icons/linkedin.svg';
 import TwitterIcon from '@assets/icons/twitter.svg';
-import WhatsAppIcon from '@assets/icons/whatsapp.svg';
 
 const socialMedia: ISocialMedia[] = [
   {
@@ -21,11 +20,6 @@ const socialMedia: ISocialMedia[] = [
     icon: LinkedInIcon,
     title: 'LinkedIn: @danielsolartech',
     url: 'https://www.linkedin.com/in/danielsolartech',
-  },
-  {
-    icon: WhatsAppIcon,
-    title: 'WhatsApp: +57 312 623 5838',
-    url: 'https://wa.me/573126235838',
   },
 ];
 

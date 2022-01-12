@@ -1,0 +1,31 @@
+@import 'variables';
+
+.container {
+  background-color: rgba($primaryColor, 0.1);
+  padding: 1rem;
+  border-radius: 12px;
+
+  &:nth-child(odd) {
+    background-color: transparent;
+  }
+  &__title,
+  &__institution {
+    margin: 0;
+  }
+  &__title {
+    font-weight: 600;
+    letter-spacing: 0.02em;
+  }
+  &__information {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin: 0.5rem 0;
+    width: 100%;
+
+    &__date {
+      color: darken(white, 55);
+      font-size: 0.9em;
+    }
+  }
+}
