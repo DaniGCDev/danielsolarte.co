@@ -1,4 +1,4 @@
-import AboutMeContainer from '@features/about-me/containers/AboutMeContainer';
+import { AboutMeContainer } from '@features/about-me';
 import type { NextPage } from 'next';
 
 const Home: NextPage = () => <AboutMeContainer />;
