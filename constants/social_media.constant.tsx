@@ -3,6 +3,7 @@ import ISocialMedia from '@interfaces/social_media.interface';
 // Icons
 import GitHubIcon from '@assets/icons/github.svg';
 import LinkedInIcon from '@assets/icons/linkedin.svg';
+import TelegramIcon from '@assets/icons/telegram.svg';
 import TwitterIcon from '@assets/icons/twitter.svg';
 
 const socialMedia: ISocialMedia[] = [
@@ -20,6 +21,11 @@ const socialMedia: ISocialMedia[] = [
     icon: LinkedInIcon,
     title: 'LinkedIn: @danielsolartech',
     url: 'https://www.linkedin.com/in/danielsolartech',
+  },
+  {
+    icon: TelegramIcon,
+    title: 'Telegram: @danielsolartech',
+    url: 'https://t.me/danielsolartech',
   },
 ];
 
