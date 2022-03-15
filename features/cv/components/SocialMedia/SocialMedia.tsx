@@ -7,11 +7,11 @@ import EmailIcon from '@assets/icons/email.svg';
 const SocialMedia: React.FC = () => (
   <div className={classes.socialMedia}>
     {/* Web */}
-    <a className={classes.socialMedia__link} href="https://www.danielsolarte.com/">
+    <a className={classes.socialMedia__link} href="https://www.danielsolarte.co/">
       <div className={classes.socialMedia__link__icon}>
         <Img src={WebIcon} />
       </div>
-      <div className={classes.socialMedia__link__text}>www.danielsolarte.com</div>
+      <div className={classes.socialMedia__link__text}>www.danielsolarte.co</div>
     </a>
     {/* E-mail */}
     <a className={classes.socialMedia__link} href="mailto:contact@danielsolarte.com">
