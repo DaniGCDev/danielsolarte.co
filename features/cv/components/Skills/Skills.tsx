@@ -4,7 +4,7 @@ import SmallBox from '../SmallBox';
 
 const Skills: React.FC = () => (
   <Section title="Habilidades">
-    <SmallBox key="skill" texts={SkillsData.map((s) => s.title)} />
+    <SmallBox id="skill" texts={SkillsData.map((s) => s.title)} />
   </Section>
 );
 
