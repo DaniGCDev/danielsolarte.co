@@ -19,7 +19,7 @@ const CVContainer: React.FC = () => {
       <button className={classes.downloadButton} onClick={handleDownloadCV(pdf)}>
         Descargar
       </button>
-      <PDFExport fileName="daniel_solarte_cv" paperSize="A2" ref={pdf}>
+      <PDFExport fileName="daniel_solarte_cv" paperSize="A1" ref={pdf}>
         <Header />
         <SocialMedia />
         <div className={classes.container}>
