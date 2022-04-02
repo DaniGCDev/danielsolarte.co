@@ -1,13 +1,15 @@
 import { format } from 'date-fns';
+import { ReactNode } from 'react';
 import classes from './ExperienceBox.module.scss';
 
 interface Props {
   jobTitle: string;
   company: string;
   from: Date;
+  showDay?: boolean;
   to?: Date;
   place?: string;
-  description: string;
+  description: ReactNode;
   contact?: string;
 }
 
@@ -15,6 +17,7 @@ const ExperienceBox: React.FC<Props> = ({
   jobTitle,
   company,
   from,
+  showDay = false,
   to,
   place,
   description,
@@ -25,7 +28,8 @@ const ExperienceBox: React.FC<Props> = ({
     <h5 className={classes.container__company}>{company}</h5>
     <div className={classes.container__information}>
       <div className={classes.container__information__date}>
-        {format(from, 'MM/yyyy')} - {to ? format(to, 'MM/yyyy') : 'Presente'}
+        {format(from, `${showDay ? 'dd/' : ''}MM/yyyy`)} -{' '}
+        {to ? format(to, `${showDay ? 'dd/' : ''}MM/yyyy`) : 'Presente'}
       </div>
       {place && <div className={classes.container__information__place}>{place}</div>}
     </div>
