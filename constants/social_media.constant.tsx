@@ -9,23 +9,23 @@ import TwitterIcon from '@assets/icons/twitter.svg';
 const socialMedia: ISocialMedia[] = [
   {
     icon: GitHubIcon,
-    title: 'GitHub: @danielsolartech',
-    url: 'https://www.github.com/danielsolartech',
+    title: 'GitHub: @DaniGCDev',
+    url: 'https://www.github.com/DaniGCDev',
   },
   {
     icon: TwitterIcon,
-    title: 'Twitter: @danielsolartech',
-    url: 'https://www.twitter.com/danielsolartech',
+    title: 'Twitter: @DaniGCDev',
+    url: 'https://www.twitter.com/DaniGCDev',
   },
   {
     icon: LinkedInIcon,
-    title: 'LinkedIn: @danielsolartech',
-    url: 'https://www.linkedin.com/in/danielsolartech',
+    title: 'LinkedIn: @DaniGCDev',
+    url: 'https://www.linkedin.com/in/DaniGCDev',
   },
   {
     icon: TelegramIcon,
-    title: 'Telegram: @danielsolartech',
-    url: 'https://t.me/danielsolartech',
+    title: 'Telegram: @DaniGCDev',
+    url: 'https://t.me/DaniGCDev',
   },
 ];
 
