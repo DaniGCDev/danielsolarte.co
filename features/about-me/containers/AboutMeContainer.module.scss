@@ -79,9 +79,11 @@
     }
   }
   &__waves {
+    bottom: 0;
     height: 229px;
+    left: 0;
     overflow: hidden;
-    position: relative;
+    position: fixed;
     width: 100%;
 
     @media (max-width: $lg) {
