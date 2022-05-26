@@ -4,6 +4,13 @@ import Section from '../../Section';
 const JobExperience: React.FC = () => (
   <Section title="Experiencia laboral">
     <ExperienceBox
+      company="Melonn S.A.S."
+      contact="https://melonn.com"
+      description=""
+      from={new Date(2022, 4, 23)}
+      jobTitle="Junior Cloud Engineering"
+    />
+    <ExperienceBox
       company="Coordinadora Mercantil"
       contact="https://www.qcode.co/ (Web)"
       description={
@@ -19,6 +26,7 @@ const JobExperience: React.FC = () => (
       from={new Date(2021, 10)}
       jobTitle="Extensión Desarrollador Front-End y devOps"
       place="Medellín, Antioquia, Colombia"
+      to={new Date(2022, 4, 20)}
     />
     <ExperienceBox
       showDay
@@ -45,6 +53,7 @@ const JobExperience: React.FC = () => (
       from={new Date(2021, 3, 9)}
       jobTitle="Desarrollador Full-Stack"
       place="Medellín, Antioquia, Colombia"
+      to={new Date(2022, 4, 20)}
     />
     <ExperienceBox
       company="Epifita S.A.S."
