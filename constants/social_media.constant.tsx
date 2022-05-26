@@ -9,23 +9,23 @@ import TwitterIcon from '@assets/icons/twitter.svg';
 const socialMedia: ISocialMedia[] = [
   {
     icon: GitHubIcon,
-    title: 'GitHub: @DaniGCDev',
-    url: 'https://www.github.com/DaniGCDev',
+    title: 'GitHub: @iamdacso',
+    url: 'https://www.github.com/iamdacso',
   },
   {
     icon: TwitterIcon,
-    title: 'Twitter: @DaniGCDev',
-    url: 'https://www.twitter.com/DaniGCDev',
+    title: 'Twitter: @iamdacso',
+    url: 'https://www.twitter.com/iamdacso',
   },
   {
     icon: LinkedInIcon,
-    title: 'LinkedIn: @DaniGCDev',
-    url: 'https://www.linkedin.com/in/DaniGCDev',
+    title: 'LinkedIn: @iamdacso',
+    url: 'https://www.linkedin.com/in/iamdacso',
   },
   {
     icon: TelegramIcon,
-    title: 'Telegram: @DaniGCDev',
-    url: 'https://t.me/DaniGCDev',
+    title: 'Telegram: @iamdacso',
+    url: 'https://t.me/iamdacso',
   },
 ];
 
