@@ -7,6 +7,7 @@ const Education: React.FC = () => (
       title="Diplomado en Artes de Datos"
       institution="Universidad EAFIT"
       from={new Date(2022, 2, 13)}
+      to={new Date(2022, 3, 30)}
       place="Medellín, Antioquia, Colombia"
     />
     <EducationBox
