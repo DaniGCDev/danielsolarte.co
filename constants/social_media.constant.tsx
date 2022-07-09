@@ -9,23 +9,23 @@ import TwitterIcon from '@assets/icons/twitter.svg';
 const socialMedia: ISocialMedia[] = [
   {
     icon: GitHubIcon,
-    title: 'GitHub: @iamdacso',
-    url: 'https://www.github.com/iamdacso',
+    title: 'GitHub: @dsolartec',
+    url: 'https://www.github.com/dsolartec',
   },
   {
     icon: TwitterIcon,
-    title: 'Twitter: @iamdacso',
-    url: 'https://www.twitter.com/iamdacso',
+    title: 'Twitter: @dsolartec',
+    url: 'https://www.twitter.com/dsolartec',
   },
   {
     icon: LinkedInIcon,
-    title: 'LinkedIn: @iamdacso',
-    url: 'https://www.linkedin.com/in/iamdacso',
+    title: 'LinkedIn: @dsolartec',
+    url: 'https://www.linkedin.com/in/dsolartec',
   },
   {
     icon: TelegramIcon,
-    title: 'Telegram: @iamdacso',
-    url: 'https://t.me/iamdacso',
+    title: 'Telegram: @dsolartec',
+    url: 'https://t.me/dsolartec',
   },
 ];
 
