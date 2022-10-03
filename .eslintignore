@@ -1,5 +1,5 @@
-**/node_modules/*
-**/build/*
-**/public/*
-next.config.js
-.prettierrc
+dist
+node_modules
+.DS_Store
+.gitignore
+*.local
