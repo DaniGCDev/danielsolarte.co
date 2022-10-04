@@ -1,4 +1,5 @@
 export interface LanguageAboutMe {
+  bestProjects: string;
   description: string;
 }
 

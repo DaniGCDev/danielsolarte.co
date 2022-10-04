@@ -15,10 +15,12 @@ import { Project } from '../interfaces';
 
 export interface ProjectContainerProps {
   data: Project;
+  size?: 'normal' | 'small';
 }
 
 export default function ProjectContainer({
   data: project,
+  size = 'normal',
 }: ProjectContainerProps): JSX.Element {
   const { t: translate } = useTranslation();
 
@@ -28,7 +30,7 @@ export default function ProjectContainer({
         <CardMedia
           alt={translate(`projects.${project.id}.title`)}
           component="img"
-          height={230}
+          height={size === 'small' ? 135 : 230}
           image={`/images/projects/${project.id}.${
             typeof project.hasImage !== 'boolean'
               ? project.hasImage.format

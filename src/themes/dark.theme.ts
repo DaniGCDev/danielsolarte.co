@@ -26,6 +26,13 @@ const darkTheme = createTheme({
         root: { backgroundColor: '#26262C' },
       },
     },
+    MuiDivider: {
+      styleOverrides: {
+        root: {
+          '&::after, &::before': { borderColor: 'rgba(255, 255, 255, 0.4)' },
+        },
+      },
+    },
   },
   palette: {
     background: {

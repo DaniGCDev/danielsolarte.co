@@ -1,5 +1,6 @@
 import {
   Avatar,
+  Divider,
   Grid,
   IconButton,
   Paper,
@@ -9,7 +10,8 @@ import {
   useMediaQuery,
 } from '@mui/material';
 import { useTranslation } from 'react-i18next';
-import { SkillsContainer } from '../components';
+import { ProjectContainer, SkillsContainer } from '../components';
+import projects from '../constants/projects';
 import {
   backEndSkills,
   devOpsSkills,
@@ -18,6 +20,7 @@ import {
   softSkills,
 } from '../constants/skills';
 import socialMedia from '../constants/social-media';
+import { ProjectCategory } from '../interfaces';
 
 export default function Home(): JSX.Element {
   const { t: translate } = useTranslation();
@@ -79,6 +82,21 @@ export default function Home(): JSX.Element {
                   ))}
                 </Paper>
               </Grid>
+            </Grid>
+          </Grid>
+          <Grid item xs={12}>
+            <Divider>{translate('aboutMe.bestProjects')}</Divider>
+            <Grid container spacing={2} sx={{ marginTop: 0.5 }}>
+              {projects
+                .filter((project) =>
+                  project.categories.includes(ProjectCategory.Importants),
+                )
+                .slice(0, 2)
+                .map((project, i) => (
+                  <Grid item key={`project_${project.id}_${i}`} xs={12} sm={6}>
+                    <ProjectContainer data={project} size="small" />
+                  </Grid>
+                ))}
             </Grid>
           </Grid>
         </Grid>
