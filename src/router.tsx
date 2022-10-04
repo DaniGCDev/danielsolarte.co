@@ -3,6 +3,7 @@ import { createBrowserRouter } from 'react-router-dom';
 import App from './App';
 
 const Home = lazy(() => import('./pages/Home'));
+const Projects = lazy(() => import('./pages/Projects'));
 const Error = lazy(() => import('./Error'));
 
 const router = createBrowserRouter([
@@ -11,6 +12,10 @@ const router = createBrowserRouter([
       {
         element: <Home />,
         index: true,
+      },
+      {
+        element: <Projects />,
+        path: 'projects',
       },
     ],
     element: <App />,

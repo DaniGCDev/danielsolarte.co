@@ -14,6 +14,7 @@ const useMainTemplateStyles = makeStyles((theme: Theme) => ({
       left: 0,
       position: 'fixed',
       width: '100%',
+      zIndex: 10000,
     },
     [theme.breakpoints.down('md')]: {
       bottom: 0,
@@ -21,6 +22,7 @@ const useMainTemplateStyles = makeStyles((theme: Theme) => ({
       padding: 0,
       position: 'fixed',
       width: '100%',
+      zIndex: 10000,
     },
   },
   navigator: {
