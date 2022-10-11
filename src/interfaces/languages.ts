@@ -3,8 +3,20 @@ export interface LanguageAboutMe {
   description: string;
 }
 
+export interface LanguageExperience {
+  description: string;
+}
+
+export interface LanguageExperiences {
+  Coordinadora: LanguageExperience;
+  Epifita: LanguageExperience;
+  Melonn: LanguageExperience;
+  QCode: LanguageExperience;
+}
+
 export interface LanguageMenuItems {
   aboutMe: string;
+  experience: string;
   projects: string;
   contact: string;
 }
@@ -103,6 +115,7 @@ export interface LanguageSkills {
 
 export interface LanguageResource {
   aboutMe: LanguageAboutMe;
+  experience: LanguageExperiences;
   menuItems: LanguageMenuItems;
   projects: LanguageProjects;
   skills: LanguageSkills;

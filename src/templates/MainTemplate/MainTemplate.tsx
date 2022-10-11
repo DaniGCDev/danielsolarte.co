@@ -4,6 +4,8 @@ import ContactPageIcon from '@mui/icons-material/ContactPage';
 import ContactPageOutlinedIcon from '@mui/icons-material/ContactPageOutlined';
 import PersonIcon from '@mui/icons-material/Person';
 import PersonOutlinedIcon from '@mui/icons-material/PersonOutlined';
+import WorkHistoryIcon from '@mui/icons-material/WorkHistory';
+import WorkHistoryOutlinedIcon from '@mui/icons-material/WorkHistoryOutlined';
 import { Grid } from '@mui/material';
 import { useTranslation } from 'react-i18next';
 import { Link, useLocation } from 'react-router-dom';
@@ -25,6 +27,14 @@ const navItems = [
     },
     title: 'menuItems.projects',
     to: '/projects',
+  },
+  {
+    icon: {
+      active: <WorkHistoryIcon />,
+      disabled: <WorkHistoryOutlinedIcon />,
+    },
+    title: 'menuItems.experience',
+    to: '/experience',
   },
   {
     icon: {
