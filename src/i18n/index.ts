@@ -12,9 +12,8 @@ i18next
   .init({
     debug: true,
     fallbackLng: 'en-US',
-    interpolation: {
-      escapeValue: false,
-    },
+    detection: { caches: [] },
+    interpolation: { escapeValue: false },
     resources: { 'en-US': { translation: enUs }, es: { translation: es } },
   });
 
