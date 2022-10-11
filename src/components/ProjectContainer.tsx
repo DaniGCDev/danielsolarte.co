@@ -10,6 +10,7 @@ import {
   Typography,
 } from '@mui/material';
 import { format } from 'date-fns';
+import { enUS, es } from 'date-fns/locale';
 import { useTranslation } from 'react-i18next';
 import { Project } from '../interfaces';
 
@@ -22,7 +23,10 @@ export default function ProjectContainer({
   data: project,
   size = 'normal',
 }: ProjectContainerProps): JSX.Element {
-  const { t: translate } = useTranslation();
+  const {
+    i18n: { resolvedLanguage },
+    t: translate,
+  } = useTranslation();
 
   return (
     <Card variant="outlined">
@@ -47,7 +51,9 @@ export default function ProjectContainer({
           </Grid>
           <Grid item>
             <Typography component="div" variant="caption">
-              {format(project.date, 'MMMM yyyy')}
+              {format(project.date, 'MMMM yyyy', {
+                locale: resolvedLanguage === 'es' ? es : enUS,
+              })}
             </Typography>
           </Grid>
         </Grid>
