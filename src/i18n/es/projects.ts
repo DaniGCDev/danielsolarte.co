@@ -66,7 +66,7 @@ const projects: LanguageProjects = {
   },
   BeccaLyria: {
     description: '',
-    links: { docs: 'Documentation', github: 'GitHub' },
+    links: { docs: 'Documentación', github: 'GitHub' },
     title: 'Bot de Discord BeccaLyria',
   },
   FaztCommunity: {
@@ -111,7 +111,7 @@ const projects: LanguageProjects = {
   },
   nongoose: {
     description: 'ODM for MongoDB based on Mongoose and written in Rust',
-    links: { docs: 'Documentation', github: 'GitHub' },
+    links: { docs: 'Documentación', github: 'GitHub' },
     title: 'Nongoose',
   },
   operationsAPP: {
@@ -155,7 +155,7 @@ const projects: LanguageProjects = {
     description:
       'Proyecto final desarrollado para la clase de Teoría General de Sistemas',
     links: { demo: 'Ver DEMO', github: 'GitHub' },
-    title: 'Proyecto final de T.G.S',
+    title: 'Proyecto final de T.G.S.',
   },
 };
 
