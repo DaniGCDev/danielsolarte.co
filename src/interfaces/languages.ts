@@ -1,6 +1,7 @@
 export interface LanguageAboutMe {
   bestProjects: string;
   description: string;
+  skillsTitle: string;
 }
 
 export interface LanguageExperience {

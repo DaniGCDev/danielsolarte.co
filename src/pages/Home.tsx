@@ -1,13 +1,15 @@
+import { ExpandMore } from '@mui/icons-material';
 import {
+  Accordion,
+  AccordionDetails,
+  AccordionSummary,
   Avatar,
   Divider,
   Grid,
   IconButton,
   Paper,
-  Theme,
   Tooltip,
   Typography,
-  useMediaQuery,
 } from '@mui/material';
 import { useTranslation } from 'react-i18next';
 import { ProjectContainer, SkillsContainer } from '../components';
@@ -25,17 +27,9 @@ import { ProjectCategory } from '../interfaces';
 export default function Home(): JSX.Element {
   const { t: translate } = useTranslation();
 
-  const isMobile = useMediaQuery((theme: Theme) =>
-    theme.breakpoints.down('sm'),
-  );
-
-  const isTablet = useMediaQuery((theme: Theme) =>
-    theme.breakpoints.down('md'),
-  );
-
   return (
-    <Grid container justifyContent="space-between" spacing={isTablet ? 4 : 2}>
-      <Grid item xs={12} md={6}>
+    <Grid container alignItems="center" justifyContent="center" spacing={4}>
+      <Grid item xs={12}>
         <Grid container alignItems="center" direction="column" spacing={4}>
           <Grid item>
             <Avatar
@@ -84,55 +78,62 @@ export default function Home(): JSX.Element {
               </Grid>
             </Grid>
           </Grid>
-          <Grid item xs={12}>
-            <Divider>{translate('aboutMe.bestProjects')}</Divider>
-            <Grid container spacing={2} sx={{ marginTop: 0.5 }}>
-              {projects
-                .filter((project) =>
-                  project.categories.includes(ProjectCategory.Importants),
-                )
-                .slice(0, 2)
-                .map((project, i) => (
-                  <Grid item key={`project_${project.id}_${i}`} xs={12} sm={6}>
-                    <ProjectContainer data={project} size="small" />
-                  </Grid>
-                ))}
-            </Grid>
-          </Grid>
         </Grid>
       </Grid>
-      <Grid item xs={12} md={6}>
-        <Paper sx={{ paddingX: 2.5, paddingY: isMobile ? 2.5 : 3.5 }}>
-          <SkillsContainer
-            data={fullStackSkills}
-            id="full-stack-skills"
-            title="skills.fullStack"
-          />
-          <SkillsContainer
-            withMarginTop
-            data={frontEndSkills}
-            id="front-end-skills"
-            title="skills.frontEnd"
-          />
-          <SkillsContainer
-            withMarginTop
-            data={backEndSkills}
-            id="back-end-skills"
-            title="skills.backEnd"
-          />
-          <SkillsContainer
-            withMarginTop
-            data={devOpsSkills}
-            id="dev-ops-skills"
-            title="skills.devOps"
-          />
-          <SkillsContainer
-            withMarginTop
-            data={softSkills}
-            id="soft-skills"
-            title="skills.soft"
-          />
-        </Paper>
+      <Grid item xs={12} md={9}>
+        <Accordion>
+          <AccordionSummary expandIcon={<ExpandMore />}>
+            <Typography color="rgba(0, 0, 0, .8)" fontWeight="medium">
+              {translate('aboutMe.skillsTitle')}
+            </Typography>
+          </AccordionSummary>
+          <AccordionDetails>
+            <SkillsContainer
+              data={fullStackSkills}
+              id="full-stack-skills"
+              title="skills.fullStack"
+            />
+            <SkillsContainer
+              withMarginTop
+              data={frontEndSkills}
+              id="front-end-skills"
+              title="skills.frontEnd"
+            />
+            <SkillsContainer
+              withMarginTop
+              data={backEndSkills}
+              id="back-end-skills"
+              title="skills.backEnd"
+            />
+            <SkillsContainer
+              withMarginTop
+              data={devOpsSkills}
+              id="dev-ops-skills"
+              title="skills.devOps"
+            />
+            <SkillsContainer
+              withMarginTop
+              data={softSkills}
+              id="soft-skills"
+              title="skills.soft"
+            />
+          </AccordionDetails>
+        </Accordion>
+      </Grid>
+      <Grid item xs={12} md={9}>
+        <Divider>{translate('aboutMe.bestProjects')}</Divider>
+        <Grid container spacing={2} sx={{ marginTop: 2 }}>
+          {projects
+            .filter((project) =>
+              project.categories.includes(ProjectCategory.Importants),
+            )
+            .slice(0, 2)
+            .map((project, i) => (
+              <Grid item key={`project_${project.id}_${i}`} xs={12} sm={6}>
+                <ProjectContainer data={project} size="small" />
+              </Grid>
+            ))}
+        </Grid>
       </Grid>
     </Grid>
   );
