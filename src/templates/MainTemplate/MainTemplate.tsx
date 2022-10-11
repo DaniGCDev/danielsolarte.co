@@ -1,7 +1,5 @@
 import BurstModeIcon from '@mui/icons-material/BurstMode';
 import BurstModeOutlinedIcon from '@mui/icons-material/BurstModeOutlined';
-import ContactPageIcon from '@mui/icons-material/ContactPage';
-import ContactPageOutlinedIcon from '@mui/icons-material/ContactPageOutlined';
 import PersonIcon from '@mui/icons-material/Person';
 import PersonOutlinedIcon from '@mui/icons-material/PersonOutlined';
 import WorkHistoryIcon from '@mui/icons-material/WorkHistory';
@@ -35,14 +33,6 @@ const navItems = [
     },
     title: 'menuItems.experience',
     to: '/experience',
-  },
-  {
-    icon: {
-      active: <ContactPageIcon />,
-      disabled: <ContactPageOutlinedIcon />,
-    },
-    title: 'menuItems.contact',
-    to: '/contact',
   },
 ];
 

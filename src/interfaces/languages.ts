@@ -18,7 +18,6 @@ export interface LanguageMenuItems {
   aboutMe: string;
   experience: string;
   projects: string;
-  contact: string;
 }
 
 export interface LanguageProject<Links> {
