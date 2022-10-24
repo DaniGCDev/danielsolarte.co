@@ -36,6 +36,7 @@ export interface LanguageProjectsCategories {
   Importants: string;
   Meetings: string;
   Mobile: string;
+  University: string;
 }
 
 export interface LanguageProjectsFields {
@@ -74,6 +75,8 @@ export interface LanguageProjectsTags {
   TypeORM: string;
   TypeScript: string;
   ViteJS: string;
+  WinForms: string;
+  WPF: string;
 }
 
 export interface LanguageProjects {
@@ -98,6 +101,7 @@ export interface LanguageProjects {
   operationsAPP: LanguageProject<{ github: string }>;
   portfoliov1: LanguageProject<{ github: string }>;
   portfoliov2: LanguageProject<{ github: string }>;
+  PTFinalProject: LanguageProject<{ github: string }>;
   radiolibre: LanguageProject<{ github: string }>;
   rustNotesCLI: LanguageProject<{ github: string }>;
   sflynlang: LanguageProject<{ github: string }>;

@@ -7,6 +7,21 @@ const projects: Project[] = [
       ProjectCategory.BackEnd,
       ProjectCategory.FrontEnd,
       ProjectCategory.FullStack,
+      ProjectCategory.University,
+    ],
+    date: new Date(2022, 9),
+    hasImage: true,
+    id: 'PTFinalProject',
+    links: [
+      { id: 'github', to: 'https://github.com/dsolartec/pt-final-project' },
+    ],
+    tags: [ProjectTag.CSharp, ProjectTag.WPF],
+  },
+  {
+    categories: [
+      ProjectCategory.BackEnd,
+      ProjectCategory.FrontEnd,
+      ProjectCategory.FullStack,
       ProjectCategory.Importants,
     ],
     date: new Date(2022, 8),
@@ -29,7 +44,7 @@ const projects: Project[] = [
     ],
   },
   {
-    categories: [ProjectCategory.FrontEnd],
+    categories: [ProjectCategory.FrontEnd, ProjectCategory.University],
     date: new Date(2022, 3),
     hasImage: true,
     id: 'operationsAPP',
@@ -39,7 +54,7 @@ const projects: Project[] = [
         to: 'https://github.com/dsolartec/aplicacion-operaciones',
       },
     ],
-    tags: [ProjectTag.CSharp],
+    tags: [ProjectTag.CSharp, ProjectTag.WinForms],
   },
   // 2021
   {
@@ -60,7 +75,7 @@ const projects: Project[] = [
     tags: [ProjectTag.Rust],
   },
   {
-    categories: [ProjectCategory.FrontEnd],
+    categories: [ProjectCategory.FrontEnd, ProjectCategory.University],
     date: new Date(2021, 4),
     hasImage: { format: 'jpeg' },
     id: 'tgs2021',

@@ -14,6 +14,7 @@ const categories: LanguageProjectsCategories = {
   Importants: 'Importantes',
   Meetings: 'Charlas',
   Mobile: 'Móvil',
+  University: 'Proyectos universitarios',
 };
 
 const fields: LanguageProjectsFields = {
@@ -52,6 +53,8 @@ const tags: LanguageProjectsTags = {
   TypeORM: 'TypeORM',
   TypeScript: 'TypeScript',
   ViteJS: 'ViteJS',
+  WinForms: 'Windows Form',
+  WPF: 'WPF',
 };
 
 const projects: LanguageProjects = {
@@ -129,6 +132,12 @@ const projects: LanguageProjects = {
     description: 'Portafolio personal (v2) desarrollado con Rust',
     links: { github: 'GitHub' },
     title: 'Portafolio personal v2',
+  },
+  PTFinalProject: {
+    description:
+      'Esta aplicación te permite reproducir tu música local (carpeta Música) y música proveniente de YouTube/YouTube Music usando el enlace que provee al compartir',
+    links: { github: 'GitHub' },
+    title: 'Proyecto final Herramientas de Programación',
   },
   radiolibre: {
     description: '',

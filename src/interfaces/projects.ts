@@ -7,6 +7,7 @@ export enum ProjectCategory {
   Importants = 'Importants',
   Meetings = 'Meetings',
   Mobile = 'Mobile',
+  University = 'University',
 }
 
 export interface ProjectLink {
@@ -43,6 +44,8 @@ export enum ProjectTag {
   TypeORM = 'TypeORM',
   TypeScript = 'TypeScript',
   ViteJS = 'ViteJS',
+  WinForms = 'WinForms',
+  WPF = 'WPF',
 }
 
 export interface Project {

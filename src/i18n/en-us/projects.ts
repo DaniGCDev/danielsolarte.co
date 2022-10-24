@@ -14,6 +14,7 @@ const categories: LanguageProjectsCategories = {
   Importants: 'Importants',
   Meetings: 'Meetings',
   Mobile: 'Mobile',
+  University: 'University projects',
 };
 
 const fields: LanguageProjectsFields = {
@@ -52,6 +53,8 @@ const tags: LanguageProjectsTags = {
   TypeORM: 'TypeORM',
   TypeScript: 'TypeScript',
   ViteJS: 'ViteJS',
+  WinForms: 'Windows Form',
+  WPF: 'WPF',
 };
 
 const projects: LanguageProjects = {
@@ -128,6 +131,12 @@ const projects: LanguageProjects = {
     description: 'Personal portfolio v2 built with Rust',
     links: { github: 'GitHub' },
     title: 'Personal portfolio v2',
+  },
+  PTFinalProject: {
+    description:
+      'This app allows you to play your local music (Music folder) and music from YouTube/YouTube Music using the link it provides when sharing',
+    links: { github: 'GitHub' },
+    title: 'Programming Tools final project',
   },
   radiolibre: {
     description: '',
