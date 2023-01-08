@@ -1,5 +1,11 @@
 const jobExperience = [
   {
+    company: 'Mercado Libre S.A.S.',
+    id: 'MELI',
+    since: new Date(2022, 11, 5),
+    title: 'Software developer',
+  },
+  {
     company: 'Melonn S.A.S.',
     id: 'Melonn',
     since: new Date(2022, 4, 23),

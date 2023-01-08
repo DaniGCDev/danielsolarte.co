@@ -13,6 +13,9 @@ const experience: LanguageExperiences = {
     description:
       'I developed a mobile application in Flutter that includes an integrated chat and voice calls, I developed a mobile application in Flutter of time tracking type for employees, for iOS and Android, I used the agile SCRUM methodology and led some projects, I fixed and built new features for APIs built in C# and I designed web interfaces using Figma and the Material Design guidelines',
   },
+  MELI: {
+    description: 'I am on the Identity Access Manager (IAM) team',
+  },
   Melonn: {
     description:
       'I built new components and integrations for the internal page, both front-end and back-end',

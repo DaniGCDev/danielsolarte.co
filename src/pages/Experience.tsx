@@ -48,7 +48,8 @@ export default function Experience(): JSX.Element {
                 </Typography>
                 <Typography variant="subtitle2">
                   {format(experience.since, 'dd MMMM/yyyy', { locale })} -{' '}
-                  {format(experience.to, 'dd MMMM/yyyy', { locale })}
+                  {experience.to &&
+                    format(experience.to, 'dd MMMM/yyyy', { locale })}
                 </Typography>
                 <Typography variant="caption">{experience.company}</Typography>
                 <Typography color="text.secondary" sx={{ marginTop: 1 }}>

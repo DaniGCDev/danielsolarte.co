@@ -11,6 +11,7 @@ export interface LanguageExperience {
 export interface LanguageExperiences {
   Coordinadora: LanguageExperience;
   Epifita: LanguageExperience;
+  MELI: LanguageExperience;
   Melonn: LanguageExperience;
   QCode: LanguageExperience;
 }

@@ -9,6 +9,9 @@ const experience: LanguageExperiences = {
     description:
       'Colaboré en la creación de un API que juntaba diferentes datos obtenidos del SIATA, y también desarrollé una página web con un mapa interactivo que incluía figuras en 3D por los 40 años del Área Metropolitana (https://amva40.github.io/)',
   },
+  MELI: {
+    description: 'Estoy en el equipo de Identity Access Manager',
+  },
   Melonn: {
     description:
       'Desarrollé nuevos componentes e integraciones para la página interna, tanto en el front-end como en el back-end',
